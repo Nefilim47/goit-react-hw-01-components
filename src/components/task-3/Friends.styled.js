@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-const status = styled.span`
+const Status = styled.span`
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 100%;
   background-color: ${props => (props.status ? 'green' : 'red')};
 `;
-const item = styled.li`
+const Item = styled.li`
   padding-left: 20px;
   display: flex;
   align-items: center;
@@ -16,6 +16,6 @@ const item = styled.li`
   width: 200px;
 `;
 export const FriendStyle = {
-  status,
-  item,
+  Status,
+  Item,
 };

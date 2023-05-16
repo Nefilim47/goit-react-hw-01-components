@@ -21,6 +21,7 @@ export const App = () => {
       />
       <section>
         <h2>Upload stats</h2>
+
         <ul>
           {stat.map(st => (
             <Statistics

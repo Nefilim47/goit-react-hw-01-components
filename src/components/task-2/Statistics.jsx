@@ -9,10 +9,10 @@ export const Statistics = ({ label, percentage }) => {
       .padStart(6, 0)}`;
   }
   return (
-    <StatStyle.item style={{ background: getRandomHexColor() }}>
-      <StatStyle.label>{label}</StatStyle.label>
+    <StatStyle.Item style={{ background: getRandomHexColor() }}>
+      <StatStyle.Label>{label}</StatStyle.Label>
       <span className="percentage">{percentage}</span>
-    </StatStyle.item>
+    </StatStyle.Item>
   );
 };
 Statistics.propTypes = {

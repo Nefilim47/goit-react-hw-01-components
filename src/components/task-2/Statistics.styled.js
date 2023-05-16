@@ -8,18 +8,18 @@ import styled from 'styled-components';
 //   display: flex;
 //   list-style: none;
 // `;
-const item = styled.li`
+const Item = styled.li`
   width: 70px;
   height: 70px;
   text-align: center;
 `;
-const label = styled.span`
+const Label = styled.span`
   display: block;
   padding: 8px;
 `;
 export const StatStyle = {
   // statList,
-  item,
+  Item,
   // statistics,
-  label,
+  Label,
 };

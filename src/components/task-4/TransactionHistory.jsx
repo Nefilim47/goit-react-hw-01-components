@@ -4,11 +4,11 @@ import { TransStyle } from './TransStyle.styled';
 
 export const TransactionHistory = ({ index, type, amount, currency }) => {
   return (
-    <TransStyle.stringTr cardId={index}>
+    <TransStyle.StringTr cardId={index}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
-    </TransStyle.stringTr>
+    </TransStyle.StringTr>
   );
 };
 TransactionHistory.propTypes = {
