@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
-// const statistics = styled.h2`
-//   padding-left: 90px;
-// `;
+const Statistics = styled.h2`
+  padding-left: 90px;
+`;
 
-// const statList = styled.ul`
-//   display: flex;
-//   list-style: none;
-// `;
+const StatList = styled.ul`
+  display: flex;
+  list-style: none;
+  //
+`;
 const Item = styled.li`
   width: 70px;
   height: 70px;
@@ -18,8 +19,8 @@ const Label = styled.span`
   padding: 8px;
 `;
 export const StatStyle = {
-  // statList,
+  StatList,
   Item,
-  // statistics,
+  Statistics,
   Label,
 };

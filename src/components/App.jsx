@@ -1,13 +1,12 @@
 import React from 'react';
 import { Card } from './task-1/users-card';
-import { Statistics } from './task-2/Statistics.jsx';
 import { FriendListItem } from './task-3/FriendListItem';
 import { TransactionHistory } from './task-4/TransactionHistory';
 
 import user from './task-1/user.json';
-import stat from './task-2/data.json';
 import friends from './task-3/friends.json';
 import trans from './task-4/transactions.json';
+import { Upload } from './task-2/Upload';
 
 export const App = () => {
   return (
@@ -19,20 +18,7 @@ export const App = () => {
         tag={user.tag}
         stats={user.stats}
       />
-      <section>
-        <h2>Upload stats</h2>
-
-        <ul>
-          {stat.map(st => (
-            <Statistics
-              key={st.id}
-              label={st.label}
-              percentage={st.percentage}
-              getRandomHexColor
-            />
-          ))}
-        </ul>
-      </section>
+      <Upload />
       <ul>
         {friends.map(friend => (
           <FriendListItem
