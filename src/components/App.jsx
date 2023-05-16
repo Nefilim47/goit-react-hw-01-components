@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card } from './task-1/users-card';
 import { Statistics } from './task-2/Statistics.jsx';
-import { StatStyle } from './task-2/Statistics.styled.js';
 import { FriendListItem } from './task-3/FriendListItem';
 import { TransactionHistory } from './task-4/TransactionHistory';
 
@@ -21,8 +20,8 @@ export const App = () => {
         stats={user.stats}
       />
       <section>
-        <StatStyle.statistics>Upload stats</StatStyle.statistics>
-        <StatStyle.statList>
+        <h2>Upload stats</h2>
+        <ul>
           {stat.map(st => (
             <Statistics
               key={st.id}
@@ -31,7 +30,7 @@ export const App = () => {
               getRandomHexColor
             />
           ))}
-        </StatStyle.statList>
+        </ul>
       </section>
       <ul>
         {friends.map(friend => (
