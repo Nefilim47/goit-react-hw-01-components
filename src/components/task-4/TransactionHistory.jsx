@@ -1,0 +1,18 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { TransStyle } from './TransStyle.styled';
+
+export const TransactionHistory = ({ index, type, amount, currency }) => {
+  return (
+    <TransStyle.stringTr cardId={index}>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
+    </TransStyle.stringTr>
+  );
+};
+TransactionHistory.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};

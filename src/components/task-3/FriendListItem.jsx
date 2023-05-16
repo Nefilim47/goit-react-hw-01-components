@@ -1,5 +1,5 @@
 import React from 'react';
-import friends from './friends.json';
+import PropTypes from 'prop-types';
 import { FriendStyle } from './Friends.styled';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
@@ -11,6 +11,8 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
     </FriendStyle.item>
   );
 };
-{
-  /* <UserStyles.Status status={isOnline}></UserStyles.Status>; */
-}
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};
