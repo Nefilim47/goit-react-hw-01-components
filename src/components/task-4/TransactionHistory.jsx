@@ -12,6 +12,7 @@ export const TransactionHistory = ({ index, type, amount, currency }) => {
   );
 };
 TransactionHistory.propTypes = {
+  index: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,

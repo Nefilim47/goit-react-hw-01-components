@@ -30,7 +30,6 @@ export const Card = ({ username, tag, location, avatar, stats }) => {
 };
 
 Card.propTypes = {
-  title: PropTypes.string,
   avatar: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,

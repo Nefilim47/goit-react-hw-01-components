@@ -1,12 +1,12 @@
 import React from 'react';
 import { Statistics } from './Statistics.jsx';
-import stat from './data.json';
+import stat from '../data/data.json';
 import { StatStyle } from './Statistics.styled.js';
 
 export const Upload = () => {
   return (
     <section>
-      <StatStyle.Statistics>Upload stats</StatStyle.Statistics>
+      <StatStyle.Statistics>{stat.title}</StatStyle.Statistics>
       <StatStyle.StatList>
         {stat.map(st => (
           <Statistics
