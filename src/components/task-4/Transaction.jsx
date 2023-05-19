@@ -1,8 +1,7 @@
 import React from 'react';
-import trans from '../data/transactions.json';
 import { TransactionHistory } from './TransactionHistory';
 
-export const Transaction = () => {
+export const Transaction = ({ trans }) => {
   return (
     <table className="transaction-history">
       <thead>

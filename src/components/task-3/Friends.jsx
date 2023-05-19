@@ -1,13 +1,15 @@
 import React from 'react';
-import friends from '../data/friends.json';
-import { FriendListItem } from './FriendListItem';
+import PropTypes from 'prop-types';
 
-export const Friends = () => {
+import { FriendListItem } from './FriendListItem.jsx';
+
+export const FriendList = ({ friends }) => {
   return (
     <ul>
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}
+          id={friend.id}
           avatar={friend.avatar}
           name={friend.name}
           isOnline={friend.isOnline}
@@ -15,4 +17,8 @@ export const Friends = () => {
       ))}
     </ul>
   );
+};
+
+FriendList.propTypes = {
+  friends: PropTypes.array,
 };

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Statistics } from './Statistics.jsx';
-import stat from '../data/data.json';
 import { StatStyle } from './Statistics.styled.js';
 
-export const Upload = () => {
+export const Upload = ({ stat }) => {
   return (
     <section>
       <StatStyle.Statistics>{stat.title}</StatStyle.Statistics>

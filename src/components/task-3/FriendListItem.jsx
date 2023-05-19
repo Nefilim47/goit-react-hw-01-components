@@ -1,3 +1,12 @@
+// export const FriendsListItem = ({ avatar, name, isOnline }) => {
+//   return (
+//     <li>
+//       <span isOnline={isOnline}></span>
+//       <img src={avatar} alt="User avatar" width="48" />
+//       <p>{name}</p>
+//     </li>
+//   );
+// };
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FriendStyle } from './Friends.styled';
