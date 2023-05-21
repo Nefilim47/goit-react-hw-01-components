@@ -1,5 +1,6 @@
 import React from 'react';
 import { TransactionHistory } from './TransactionHistory';
+import PropTypes from 'prop-types';
 
 export const Transaction = ({ trans }) => {
   return (
@@ -24,4 +25,7 @@ export const Transaction = ({ trans }) => {
       </tbody>
     </table>
   );
+};
+Transaction.propTypes = {
+  trans: PropTypes.array,
 };

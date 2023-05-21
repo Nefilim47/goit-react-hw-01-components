@@ -1,11 +1,12 @@
 import React from 'react';
 import { Statistics } from './Statistics.jsx';
 import { StatStyle } from './Statistics.styled.js';
+import PropTypes from 'prop-types';
 
-export const Upload = ({ stat }) => {
+export const Upload = ({ stat, title }) => {
   return (
     <section>
-      <StatStyle.Statistics>{stat.title}</StatStyle.Statistics>
+      <StatStyle.Statistics>{title}</StatStyle.Statistics>
       <StatStyle.StatList>
         {stat.map(st => (
           <Statistics
@@ -18,4 +19,8 @@ export const Upload = ({ stat }) => {
       </StatStyle.StatList>
     </section>
   );
+};
+Upload.propTypes = {
+  stat: PropTypes.array,
+  title: PropTypes.string,
 };
