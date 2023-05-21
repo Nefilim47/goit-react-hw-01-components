@@ -6,7 +6,8 @@ import PropTypes from 'prop-types';
 export const Upload = ({ stat, title }) => {
   return (
     <section>
-      <StatStyle.Statistics>{title}</StatStyle.Statistics>
+      {title && <StatStyle.Statistics>{title}</StatStyle.Statistics>}
+
       <StatStyle.StatList>
         {stat.map(st => (
           <Statistics
